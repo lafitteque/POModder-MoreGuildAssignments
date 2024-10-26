@@ -1,0 +1,5 @@
+- Translate every achievement
+- Prettier Achievement Area
+- Custom Achievements
+- Black area ???? x>=2000
+- Use icons for every achievement?

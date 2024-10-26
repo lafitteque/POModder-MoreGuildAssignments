@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://birmlninsg0ry"
+
+[deps]
+
+files=["res://mods-unpacked/POModder-MoreGuildMissions/translations/translations.en.translation", "res://mods-unpacked/POModder-MoreGuildMissions/translations/translations.fr.translation", "res://mods-unpacked/POModder-MoreGuildMissions/translations/translations.es.translation"]
+
+source_file="res://mods-unpacked/POModder-MoreGuildMissions/translations/translations.csv"
+dest_files=["res://mods-unpacked/POModder-MoreGuildMissions/translations/translations.en.translation", "res://mods-unpacked/POModder-MoreGuildMissions/translations/translations.fr.translation", "res://mods-unpacked/POModder-MoreGuildMissions/translations/translations.es.translation"]
+
+[params]
+
+compress=true
+delimiter=0
