@@ -63,7 +63,7 @@ func _on_timer_timeout():
 			tile.res_sprite.hide()
 			set_meta("destructable", true)
 			tile.initResourceSprite(Vector2(5, 0))
-			var detonator = load("res://mods-unpacked/POModder-MoreGuildMissions/content/detonator_tile/Detonator.tscn").instantiate()#QLafitte Added
+			var detonator = load("res://mods-unpacked/POModder-MoreGuildAssignments/content/detonator_tile/Detonator.tscn").instantiate()#QLafitte Added
 			detonator.position = position#QLafitte Added
 			tile.add_child(detonator)#QLafitte Added
 			

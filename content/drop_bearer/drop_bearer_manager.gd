@@ -54,7 +54,7 @@ func _on_timer_immobile_timeout():
 		timer_list[0].queue_free()
 		timer_list.pop_front()
 	elif drop_pos_list[0] == drop_list[0].position and randf_range(0,1)<probability_spawn:
-		var dropbearer = preload("res://mods-unpacked/POModder-MoreGuildMissions/content/drop_bearer/DropBearer.tscn").instantiate()#QLafitte Added
+		var dropbearer = preload("res://mods-unpacked/POModder-MoreGuildAssignments/content/drop_bearer/DropBearer.tscn").instantiate()#QLafitte Added
 		dropbearer.global_position = drop_list[0].global_position + Vector2.UP*2#QLafitte Added
 		add_child(dropbearer)
 		

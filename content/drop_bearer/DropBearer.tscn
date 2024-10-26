@@ -1,6 +1,6 @@
 [gd_scene load_steps=36 format=3 uid="uid://bbrcsy54a4qpm"]
 
-[ext_resource type="Script" path="res://mods-unpacked/POModder-MoreGuildMissions/content/drop_bearer/drop_bearer.gd" id="1_kpri6"]
+[ext_resource type="Script" path="res://mods-unpacked/POModder-MoreGuildAssignments/content/drop_bearer/drop_bearer.gd" id="1_kpri6"]
 [ext_resource type="Texture2D" uid="uid://01ok1v6su3dj" path="res://content/critters/mushroomman/pilzmannerl_sheet.png" id="2"]
 [ext_resource type="PackedScene" path="res://systems/deprecatedtween/DeprecatedTween.tscn" id="3"]
 

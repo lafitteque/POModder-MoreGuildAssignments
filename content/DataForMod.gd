@@ -38,7 +38,7 @@ const DROP_FROM_TILES_SCENES := {
 	"nothing" : null
 }
 
-const APRIL_FOOLS_PROBABILITIES = [50.0, 5.0 , 2.0 , 1.0, 20.0]
+const APRIL_FOOLS_PROBABILITIES = [20.0, 5.0 , 2.0 , 0.3, 20.0]
 
 static func weighted_random(weights) -> int:
 	var weights_sum := 0.0

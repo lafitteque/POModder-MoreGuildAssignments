@@ -1,8 +1,8 @@
 {
-	"name": "MoreGuildMissions",
+	"name": "MoreGuildAssignments",
 	"namespace": "POModder",
 	"version_number": "1.0.0",
-	"description": "Adds more guild missions.",
+	"description": "Adds more guild assignments.",
 	"website_url": "https://",
 	"dependencies": [],
 	"extra": {

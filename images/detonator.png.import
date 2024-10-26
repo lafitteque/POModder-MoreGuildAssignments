@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drtqtopjj20yc"
-path="res://.godot/imported/detonator.png-e8cf22b4389db30de1c49ab24994e7b6.ctex"
+path="res://.godot/imported/detonator.png-bab81c28ded779b06b1c19715b804d62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mods-unpacked/POModder-MoreGuildMissions/images/detonator.png"
-dest_files=["res://.godot/imported/detonator.png-e8cf22b4389db30de1c49ab24994e7b6.ctex"]
+source_file="res://mods-unpacked/POModder-MoreGuildAssignments/images/detonator.png"
+dest_files=["res://.godot/imported/detonator.png-bab81c28ded779b06b1c19715b804d62.ctex"]
 
 [params]
 

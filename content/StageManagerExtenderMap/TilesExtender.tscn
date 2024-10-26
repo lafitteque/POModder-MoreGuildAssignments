@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cwkjxyatdpl34"]
 
-[ext_resource type="Script" path="res://mods-unpacked/POModder-MoreGuildMissions/content/StageManagerExtenderMap/TilesExtender.gd" id="1_c11ny"]
+[ext_resource type="Script" path="res://mods-unpacked/POModder-MoreGuildAssignments/content/StageManagerExtenderMap/TilesExtender.gd" id="1_c11ny"]
 
 [node name="MapExtender" type="Node2D"]
 script = ExtResource("1_c11ny")
