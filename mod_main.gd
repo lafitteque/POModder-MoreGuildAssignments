@@ -39,8 +39,8 @@ func modInit():
 	StageManager.connect("level_ready", _on_level_ready)
 	manage_overwrites()	
 	
-	var stage_manager_extender = preload("res://mods-unpacked/POModder-MoreGuildAssignments/content/StageManagerExtenderMap/StageManagerExtenderMap.tscn").instantiate()
-	get_tree().get_root().find_child("StageManager",false,false).add_child(stage_manager_extender)
+	#var stage_manager_extender = preload("res://mods-unpacked/POModder-MoreGuildAssignments/content/StageManagerExtenderMap/StageManagerExtenderMap.tscn").instantiate()
+	#get_tree().get_root().find_child("StageManager",false,false).add_child(stage_manager_extender)
 	
 # Called when the node enters the scene tree for the first time.
 func manage_overwrites():
@@ -52,6 +52,14 @@ func manage_overwrites():
 	
 	
 func _on_level_ready():
+	var tiles = get_tree().get_root().find_child("Tiles",true ,false)
+	if tiles :
+		#DataForMod.add_message(get_tree().get_root().get_child(13).map,"TileExtender Ajouté",Vector2.UP*300)
+		var tiles_extender = preload("res://mods-unpacked/POModder-MoreGuildAssignments/content/TilesExtender/TilesExtender.tscn").instantiate()
+		tiles.add_child(tiles_extender)
+	else :
+		tiles = null
+
 	if Data.of("assignment.id") is String and Data.of("assignment.id") == "thieves":
 		var drop_bearer_manager = preload("res://mods-unpacked/POModder-MoreGuildAssignments/content/drop_bearer/drop_bearer_manager.tscn").instantiate()
 		get_tree().get_root().get_child(13).map.add_child(drop_bearer_manager)

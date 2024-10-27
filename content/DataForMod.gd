@@ -90,3 +90,12 @@ const ACHIEVEMENTS := [
 	"RELICHUNT_MAPLARGE",
 	"RELICHUNT_BEATFINALE"
 ]
+
+static func add_message(parent:Node2D,text:String,translation:Vector2 = Vector2.ZERO):
+	var label = Label.new()
+	label.text = text
+	label.name = "debug_label"
+	if parent.find_child("debug_label"):
+		parent.find_child("debug_label").queue_free()
+	parent.add_child(label)
+	label.position += translation
