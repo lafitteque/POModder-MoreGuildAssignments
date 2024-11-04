@@ -5,16 +5,14 @@ var timer_list = []
 var drop_pos_list = []
 
 var already_spawned_list = []
-var wait_time_before_bearer_appears = 1.0
+var wait_time_before_bearer_appears = 3.0
 var cooldown_already_spawned = 50.0
 var cooldown_list = []
 
 var probability_spawn = 0.01
 
 func _ready():
-	
-	if Data.of("assignment.id") is String and Data.of("assignment.id") == "thieves":
-		probability_spawn = 1
+	probability_spawn = 1
 	
 func _on_timer_timeout():
 	var count_to_pop = 0

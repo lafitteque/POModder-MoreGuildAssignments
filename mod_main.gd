@@ -29,7 +29,7 @@ func _ready():
 	
 	
 func modInit():
-	ModLoaderMod.install_script_extension(ext_dir + "Achievement_MINE_ALL.gd")
+	#ModLoaderMod.install_script_extension(ext_dir + "Achievement_MINE_ALL.gd")
 	ModLoaderMod.install_script_extension(ext_dir + "AssignmentDisplay.gd")
 	ModLoaderMod.install_script_extension(ext_dir + "TileDataGenerator.gd")
 	var pathToModYaml : String = "res://mods-unpacked/POModder-MoreGuildAssignments/yaml/assignments-complete.yaml"
@@ -60,6 +60,11 @@ func _on_level_ready():
 	else :
 		tiles = null
 
-	if Data.of("assignment.id") is String and Data.of("assignment.id") == "thieves":
+	if Data.ofOr("assignment.id","")  == "thieves":
 		var drop_bearer_manager = preload("res://mods-unpacked/POModder-MoreGuildAssignments/content/drop_bearer/drop_bearer_manager.tscn").instantiate()
-		get_tree().get_root().get_child(13).map.add_child(drop_bearer_manager)
+		StageManager.currentStage.MAP.add_child(drop_bearer_manager)
+	print(Data.ofOr("assignment.id",""))
+	if Data.ofOr("assignment.id","")  == "mineall":
+		var mine_all_data = preload("res://mods-unpacked/POModder-MoreGuildAssignments/content/mine_all/mine_all_data.tscn").instantiate()
+		print(StageManager.currentStage.name)
+		add_child(mine_all_data)

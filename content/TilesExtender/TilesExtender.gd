@@ -22,7 +22,6 @@ var drop_already_updated = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	#add_message(map,"Ready de Tile Extender mais pas de timers...",Vector2.UP*200)
 	if Data.of("assignment.id") is String and Data.of("assignment.id") == "aprilfools": 
 		var drop_timer = Timer.new()
 		add_child(drop_timer)
@@ -37,7 +36,6 @@ func _ready():
 		clear_drop_timer.wait_time = 5
 		clear_drop_timer.timeout.connect(clear_drops)
 		clear_drop_timer.start()
-		#add_message(map,"timers initialisés",Vector2.UP*100)
 
 func clear_drops():
 	for i in range(drop_already_updated.size()-1,-1,-1):
@@ -79,7 +77,6 @@ func _on_timer_timeout():
 			var detonator = load("res://mods-unpacked/POModder-MoreGuildAssignments/content/detonator_tile/Detonator.tscn").instantiate()#QLafitte Added
 			detonator.position = position#QLafitte Added
 			tile.add_child(detonator)#QLafitte Added
-			add_message(tile,"det")
 			tile.destroyed.connect(detonator.explode)
 		elif Data.of("assignment.id") is String and Data.of("assignment.id") == "aprilfools":
 			if tile.type in [CONST.IRON, CONST.SAND, CONST.WATER, TILE_DETONATOR]: 
