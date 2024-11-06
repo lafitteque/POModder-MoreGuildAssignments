@@ -47,6 +47,11 @@ func update_drops():
 	for drop in get_tree().get_nodes_in_group("drops"):
 		if drop in drop_already_updated:
 			continue
+			
+		if drop.global_position.y >= -5 or drop.carriedBy.size()>0:
+			drop_already_updated.append(drop)
+			continue
+			
 		if ("type" in drop) and drop.type in [CONST.WATER, CONST.IRON,CONST.SAND]:
 			
 			var old_position = drop.global_position #QLafitte Added
