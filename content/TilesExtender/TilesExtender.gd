@@ -48,7 +48,7 @@ func update_drops():
 		if drop in drop_already_updated:
 			continue
 			
-		if drop.global_position.y >= -5 or drop.carriedBy.size()>0:
+		if drop.global_position.y <= -5 or drop.carriedBy.size()>0:
 			drop_already_updated.append(drop)
 			continue
 			
