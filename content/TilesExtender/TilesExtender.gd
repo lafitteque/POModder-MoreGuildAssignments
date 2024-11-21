@@ -2,7 +2,7 @@ extends Node2D
 
 
 const TILE_DETONATOR := 11 # QLafitte Added
-const APRIL_FOOLS_PROBABILITIES = [20.0, 5.0 , 2.0 , 0.3, 20.0]
+const APRIL_FOOLS_PROBABILITIES = [40.0, 8.0 , 3.0 , 0.5, 15.0]
 const DROP_FROM_TILES_SCENES := {
 	CONST.IRON: preload("res://content/drop/iron/IronDrop.tscn"),
 	CONST.WATER: preload("res://content/drop/water/WaterDrop.tscn"),
